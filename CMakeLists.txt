@@ -3,6 +3,8 @@ project(YouCanSleepRemake VERSION 1.0.2 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# SKSE-Hotfixes: CommonLibSSE-NG 11 no longer defines SKSEAPI; DKUtil uses it to pick
+# CONFIG_ENTRY "Data\\SKSE\\Plugins\\" (where YouCanSleepRemake.toml lives).
 add_compile_definitions(SKSEAPI)
 
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/Plugin.h.in" "${CMAKE_CURRENT_BINARY_DIR}/include/Plugin.h" @ONLY)
