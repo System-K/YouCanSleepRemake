@@ -1,14 +1,17 @@
 {
-    "name":  "ycsr",
-    "version-string":  "1.0.2",
-    "description":  "An SKSE plugin for skyrim special edition.",
-    "license":  "MIT",
-    "dependencies":  [
-                         "spdlog"
-                     ],
-    "features":  {
-                     "mo2-install":  {
-                                         "description":  "You Can Sleep Remake"
-                                     }
-                 }
+  "name": "ycsr",
+  "version-string": "1.0.2",
+  "description": "SKSE-Hotfixes build: CommonLibSSE-NG 11 dependencies + DKUtil requirements",
+  "dependencies": [
+    "directxmath",
+    "directxtk",
+    "fmt",
+    "spdlog",
+    "xbyak",
+    "rsm-binary-io",
+    "rapidcsv",
+    "simpleini",
+    "nlohmann-json"
+  ],
+  "builtin-baseline": "e456309491fd875487bf02b8a0dca76c1b1b00cc"
 }

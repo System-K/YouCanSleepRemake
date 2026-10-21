@@ -28,3 +28,9 @@ namespace Config
 		INFO("Config Loaded"sv);
 	}
 }
+
+// SKSE-Hotfixes: Explicit template instantiations for DKUtil AData (declared extern template in DKUtil/Impl/Config/Data.hpp)
+template class DKUtil::Config::detail::AData<bool>;
+template class DKUtil::Config::detail::AData<std::int64_t>;
+template class DKUtil::Config::detail::AData<double>;
+template class DKUtil::Config::detail::AData<std::basic_string<char>>;

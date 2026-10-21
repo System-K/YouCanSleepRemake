@@ -5,7 +5,7 @@
 namespace Hooks
 {
 	constexpr OpCode JmpShort = 0xEB;
-	constexpr OpCode NOP = DKUtil::Hook::detail::NOP;
+	constexpr OpCode NOP = DKUtil::Hook::Assembly::NOP;  // SKSE-Hotfixes: DKUtil 2.6 moved NOP to Assembly namespace
 
 	constexpr std::uint64_t AE_FuncID = 40443;
 	constexpr std::uint64_t SE_FuncID = 39371;
